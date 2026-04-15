@@ -49,16 +49,36 @@ We built **KubeHeal — an AI-powered self-healing system for Kubernetes**.
 - **APIs / Services:**
   - Kubernetes API
   - Metrics Server (CPU monitoring)
+  - Google Gemini API (AI-based Root Cause Analysis)
 - **Tools / Libraries:**
   - Docker
   - Minikube
-  - Chart.js
+  - Chart.js (for visulaization)
 
 ---
 
 ## ⚡ Project Setup Instructions
 
-### 1️⃣ Clone Repository
+### 1. Clone Repository
 ```bash
 git clone https://github.com/arundodamani27/hacktofuture4-A05.git
 cd hacktofuture4-A05
+```
+### 2. Start Kubernetes Cluster
+```bash
+minikube strat --driver=docker
+```
+### 3. Run Backend
+```bash
+cd backend/app uvicorn main:app --reload
+```
+### 4. Run Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
+### 5. Open Application
+```bash
+http://localhost:3000
+```
