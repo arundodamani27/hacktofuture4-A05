@@ -1,86 +1,64 @@
-# HackToFuture 4.0 — Template
+# 🚀 Team NeuralOps — KubeHeal
 
-Welcome to your official HackToFuture 4 repository.
+## 🧠 Problem Statement / Idea
 
-This repository template will be used for development, tracking progress, and final submission of your project. Ensure that all work is committed here within the allowed hackathon duration.
+Modern cloud applications run on Kubernetes, which provides basic self-healing (like restarting pods). However, it lacks intelligence and diagnosis.
 
----
-
-### Instructions for the teams:
-
-- Fork the Repository and name the forked repo in this convention: hacktofuture4-team_id (for eg: hacktofuture4-A01)
+- **Problem:** Kubernetes can restart failed pods but cannot identify *why* failures occur.
+- **Why important:** In large-scale systems, failures can cascade, increasing downtime and MTTR (Mean Time To Recovery).
+- **Target users:** DevOps Engineers, Site Reliability Engineers (SREs), and cloud teams managing microservices.
 
 ---
 
-## Rules
+## 💡 Proposed Solution
 
-- Work must be done ONLY in the forked repository
-- Only Four Contributors are allowed.
-- After 36 hours, Please make PR to the Main Repository. A Form will be sent to fill the required information.
-- Do not copy code from other teams
-- All commits must be from individual GitHub accounts
-- Please provide meaningful commits for tracking.
-- Do not share your repository with other teams
-- Final submission must be pushed before the deadline
-- Any violation may lead to disqualification
+We built **KubeHeal — an AI-powered self-healing system for Kubernetes**.
 
----
+- Continuously monitors pods in real-time
+- Performs AI-based Root Cause Analysis (RCA)
+- Decides whether to:
+  - 🤖 Auto-heal
+  - 🧑 Wait for human approval
+- Tracks MTTR to measure recovery efficiency
 
-# The Final README Template 
+### 🔥 Unique Features
 
-## Problem Statement / Idea
-
-Clearly describe the problem you are solving.
-
-- What is the problem?
-- Why is it important?
-- Who are the target users?
+- Combines monitoring + AI + remediation
+- Supports both **Manual Mode** and **Autonomous Mode**
+- Adds intelligence on top of Kubernetes self-healing
 
 ---
 
-## Proposed Solution
+## ⚙️ Features
 
-Explain your approach:
-
-- What are you building?
-- How does it solve the problem?
-- What makes your solution unique?
-
----
-
-## Features
-
-List the core features of your project:
-
-- Feature 1
-- Feature 2
-- Feature 3
+- 🔍 Real-time pod monitoring
+- 🧠 AI-based root cause analysis (RCA)
+- 🤖 Autonomous self-healing system
+- 🧑 Manual intervention workflow
+- 📊 MTTR tracking and visualization
+- 📈 Live dashboard for system health
+- ⚡ Failure injection for testing
 
 ---
 
-## Tech Stack
+## 🧰 Tech Stack
 
-Mention all technologies used:
-
-- Frontend:
-- Backend:
-- Database:
-- APIs / Services:
-- Tools / Libraries:
+- **Frontend:** React.js
+- **Backend:** FastAPI (Python)
+- **Database:** None
+- **APIs / Services:**
+  - Kubernetes API
+  - Metrics Server (CPU monitoring)
+- **Tools / Libraries:**
+  - Docker
+  - Minikube
+  - Chart.js
 
 ---
 
-## Project Setup Instructions
+## ⚡ Project Setup Instructions
 
-Provide clear steps to run your project:
-
+### 1️⃣ Clone Repository
 ```bash
-# Clone the repository
-git clone <repo-link>
-
-# Install dependencies
-...
-
-# Run the project
-...
-```
+git clone https://github.com/<your-username>/hacktofuture4-<team_id>.git
+cd hacktofuture4-<team_id>
