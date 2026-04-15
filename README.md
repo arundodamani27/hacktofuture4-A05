@@ -60,5 +60,5 @@ We built **KubeHeal — an AI-powered self-healing system for Kubernetes**.
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/<your-username>/hacktofuture4-<team_id>.git
-cd hacktofuture4-<team_id>
+git clone https://github.com/arundodamani27/hacktofuture4-A05.git
+cd hacktofuture4-A05
