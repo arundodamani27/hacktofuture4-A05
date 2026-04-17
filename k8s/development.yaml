@@ -1,1 +1,23 @@
-git add .
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cpu-test
+spec:
+  replicas: 1  
+
+  selector:
+    matchLabels:
+      app: cpu-test
+
+  template:
+    metadata:
+      labels:
+        app: cpu-test
+
+    spec:
+      
+      containers:
+      - name: app
+        image: busybox
+        command: ["sh", "-c", "exit 1"]   
+      
