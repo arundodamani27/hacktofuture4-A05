@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-
 import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import {
@@ -590,34 +587,9 @@ function App() {
         </>
       )}
 
-=======
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
->>>>>>> f2279b37b579959bef7f9d50481c3f79d48bc51d
     </div>
   );
 }
 
 export default App;
-<<<<<<< HEAD
 
-=======
->>>>>>> f2279b37b579959bef7f9d50481c3f79d48bc51d
