@@ -20,8 +20,8 @@ from app import config
 # ---------------------------
 # 📱 TELEGRAM CONFIG
 # ---------------------------
-TELEGRAM_TOKEN = "8710019379:AAFNfy-bOT5Wpg06e1hH7Kpseh7w538amDw"
-CHAT_ID = "845491019"
+TELEGRAM_TOKEN = "YOUR_TELEGRAM_API"
+CHAT_ID = "YOUR_CHAT_ID"
 
 
 def send_telegram_alert(context):
